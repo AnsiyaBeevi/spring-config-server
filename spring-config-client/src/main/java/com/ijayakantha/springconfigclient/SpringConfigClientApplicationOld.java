@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-public class SpringConfigClientApplication {
+public class SpringConfigClientApplicationOld {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringConfigClientApplication.class, args);
+		SpringApplication.run(SpringConfigClientApplicationOld.class, args);
 	}
 }
 
 @RefreshScope
 @RestController
-class MessageRestController {
+class MessageRestControllerOld {
 
 	@Value("${server.url:Unable to connect to config server}")
 	private String url;
